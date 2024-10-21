@@ -10,9 +10,15 @@ body {
     color: #333;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     border-bottom: 2px solid #d3d3d3;
 }
@@ -44,7 +50,7 @@ nav a:hover {
 }
 
 .hero {
-    background-image: url('hero-background.jpg'); /* Replace with a valid image path */
+    background-image: url('hero-background.jpg'); /* Ensure this image is correctly linked */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -86,7 +92,7 @@ nav a:hover {
     text-align: center;
 }
 
-.about .profile-photo {
+.profile-photo {
     max-width: 150px;
     border-radius: 50%;
     margin: 20px 0;
@@ -103,36 +109,12 @@ h3 {
     margin-top: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-footer {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid #d3d3d3;
-}
-
-.quick-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #2e7d32;
-}
-
-.newsletter {
-    margin: 20px 0;
-}
-
-.newsletter input[type="email"] {
-    padding: 10px;
-    border: 1px solid #d3d3d3;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 0.9em;
-}
+.service-item {
+    background: white;
+    border: 1px solid #
