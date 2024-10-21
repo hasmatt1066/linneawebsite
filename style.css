@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Lighter neutral background */
 }
 
 /* Header Section */
@@ -13,12 +13,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #2E5B4D;
+    background-color: #fff; /* Light background for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 header .logo h1 {
     font-size: 1.8em;
-    color: #fff;
+    color: #4A7361; /* Softer, muted teal */
 }
 
 header nav ul {
@@ -34,17 +35,17 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #4A7361; /* Accent color for links */
     font-weight: bold;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #3B5A4A; /* Darker teal for hover */
 }
 
 /* Hero Section */
 .hero {
-    background-image: DALL·E 2024-10-21 17.32.38 - A warm, inviting office workspace with natural light, modern furniture, and a diverse group of people engaged in a friendly, collaborative discussion .webp ('your-image-path.jpg');
+    background-image: url('your-image-path.png');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -63,7 +64,7 @@ header nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3); /* Lighter overlay to soften image */
 }
 
 .hero-content {
@@ -73,11 +74,12 @@ header nav ul li a:hover {
 
 .hero h2 {
     font-size: 2.5em;
+    color: #f4f4f4;
     margin-bottom: 20px;
 }
 
 .cta-button {
-    background-color: #2E5B4D;
+    background-color: #4A7361;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -86,18 +88,21 @@ header nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #1f4134;
+    background-color: #3B5A4A; /* Darker teal on hover */
 }
 
 /* Introduction Section */
 .introduction {
     padding: 50px;
     text-align: center;
-    background-color: #fff;
+    background-color: #fff; /* Light background */
+    color: #4A7361; /* Accent color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
 }
 
 .introduction p {
     font-size: 1.2em;
     max-width: 800px;
     margin: 0 auto;
+    color: #555; /* Softer text color for readability */
 }
