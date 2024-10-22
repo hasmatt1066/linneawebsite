@@ -19,7 +19,7 @@ nextButton.addEventListener('click', () => {
     updateCarousel();
 });
 
-// Auto-play the carousel (optional)
+// Auto-play the carousel
 setInterval(() => {
     currentIndex = (currentIndex < testimonials.length - 1) ? currentIndex + 1 : 0;
     updateCarousel();
