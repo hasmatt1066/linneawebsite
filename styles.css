@@ -18,8 +18,8 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px 0; /* Reduced padding */
+    text-align: left; /* Align text to the left */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -30,15 +30,17 @@ header {
     font-size: 2em;
     font-weight: 600;
     color: #2e7d32; /* Green accent color */
+    margin-left: 20px; /* Added margin */
 }
 
 nav ul {
     list-style: none;
+    margin-right: 20px; /* Added margin */
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px; /* Reduced margin */
 }
 
 nav a {
@@ -56,12 +58,13 @@ nav a:hover {
     background-image: url('hero-background.jpg'); /* Ensure this image is correctly linked */
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Full height for hero */
+    height: 80vh; /* Adjusted height */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    text-align: center;
+    text-align: left; /* Changed to left alignment */
+    padding: 0 20px; /* Added padding */
 }
 
 .hero-content {
@@ -71,43 +74,38 @@ nav a:hover {
 }
 
 .hero-content h1 {
-    font-size: 3em;
+    font-size: 2.5em; /* Adjusted font size */
 }
 
 .introduction, .about, .services, .testimonials, .resources, .contact {
-    padding: 60px 20px;
-    text-align: center;
-    height: 100vh; /* Full height for each section */
+    padding: 20px 0; /* Reduced padding */
+    height: auto; /* Adjust height to fit content */
+    text-align: left; /* Left-aligned text */
 }
 
 .about-content {
     display: flex;
     justify-content: space-between; /* Aligns philosophy and image side by side */
     align-items: center;
-    height: 100%; /* Full height for the about section */
+    padding: 20px; /* Added padding */
 }
 
 .philosophy {
     flex: 1; /* Takes up available space */
-    padding: 20px;
-    text-align: left; /* Aligns text to the left */
+    padding: 20px; /* Added padding */
 }
 
 .profile-photo {
-    max-width: 200px; /* Adjusted size */
-    border-radius: 10px;
-}
-
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #2e7d32; /* Green accent color */
+    width: 250px; /* Adjust to your needs */
+    height: auto;
+    margin-left: 20px; /* Added margin */
 }
 
 .service-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start; /* Align to the left */
+    padding: 20px; /* Added padding */
 }
 
 .service-item {
@@ -115,8 +113,8 @@ h2 {
     border: 1px solid #dddddd;
     border-radius: 10px;
     margin: 10px;
-    padding: 20px;
-    width: 250px; /* Adjust to fit your design */
+    padding: 15px; /* Reduced padding */
+    width: calc(33.333% - 20px); /* Adjust width for 3 columns */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -138,11 +136,48 @@ h2 {
     background-color: #1b5e20; /* Darker green on hover */
 }
 
+.contact-content {
+    display: flex; /* Use flex for layout */
+    justify-content: space-between; /* Space between ask and form */
+    padding: 20px; /* Added padding */
+}
+
+.contact-ask {
+    flex: 1; /* Takes up available space */
+    margin-right: 20px; /* Added margin */
+}
+
+form {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+input, textarea {
+    margin-bottom: 10px; /* Reduced margin */
+    padding: 10px; /* Consistent padding */
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #2e7d32; /* Green accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+}
+
 footer {
     background-color: #333;
     color: white;
-    padding: 40px 20px;
-    text-align: center;
+    padding: 20px 0; /* Reduced padding */
+    text-align: left; /* Left-aligned text */
 }
 
 .quick-links a {
