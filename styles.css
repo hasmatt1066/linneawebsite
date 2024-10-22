@@ -101,4 +101,69 @@ nav a:hover {
 h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #2e7d32;
+    color: #2e7d32; /* Green accent color */
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px; /* Adjust to fit your design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    color: #2e7d32; /* Green accent color */
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2e7d32; /* Green accent color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.quick-links a {
+    color: white;
+    margin: 0 10px;
+}
+
+.newsletter {
+    margin: 20px 0;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
