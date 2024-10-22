@@ -1,204 +1,41 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-body {
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-header {
-    background-color: #ffffff;
-    padding: 10px 0; /* Reduced padding */
-    text-align: left; /* Align text to the left */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Keeps the header above other content */
-}
-
-.logo {
-    font-size: 2em;
-    font-weight: 600;
-    color: #2e7d32; /* Green accent color */
-    margin-left: 20px; /* Added margin */
-}
-
-nav ul {
-    list-style: none;
-    margin-right: 20px; /* Added margin */
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px; /* Reduced margin */
-}
-
-nav a {
-    text-decoration: none;
-    color: #2e7d32; /* Green accent color */
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #1b5e20; /* Darker green for hover effect */
-}
-
-.hero {
-    background-image: url('hero-background.jpg'); /* Ensure this image is correctly linked */
-    background-size: cover;
-    background-position: center;
-    height: 80vh; /* Adjusted height */
+.carousel-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: left; /* Changed to left alignment */
-    padding: 0 20px; /* Added padding */
+    transition: transform 0.5s ease-in-out;
 }
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
-    padding: 40px;
-    border-radius: 10px;
+.testimonial-item {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 2.5em; /* Adjusted font size */
-}
-
-.introduction, .about, .services, .testimonials, .resources, .contact {
-    padding: 20px 0; /* Reduced padding */
-    height: auto; /* Adjust height to fit content */
-    text-align: left; /* Left-aligned text */
-}
-
-.about-content {
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between; /* Aligns philosophy and image side by side */
-    align-items: center;
-    padding: 20px; /* Added padding */
+    justify-content: space-between;
+    transform: translateY(-50%);
 }
 
-.philosophy {
-    flex: 1; /* Takes up available space */
-    padding: 20px; /* Added padding */
-}
-
-.profile-photo {
-    width: 250px; /* Adjust to your needs */
-    height: auto;
-    margin-left: 20px; /* Added margin */
-}
-
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Align to the left */
-    padding: 20px; /* Added padding */
-}
-
-.service-item {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 15px; /* Reduced padding */
-    width: calc(33.333% - 20px); /* Adjust width for 3 columns */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.service-item h3 {
-    color: #2e7d32; /* Green accent color */
-}
-
-.cta {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #2e7d32; /* Green accent color */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta:hover {
-    background-color: #1b5e20; /* Darker green on hover */
-}
-
-.contact-content {
-    display: flex; /* Use flex for layout */
-    justify-content: space-between; /* Space between ask and form */
-    padding: 20px; /* Added padding */
-}
-
-.contact-ask {
-    flex: 1; /* Takes up available space */
-    margin-right: 20px; /* Added margin */
-}
-
-form {
-    flex: 1; /* Takes up available space */
-    display: flex;
-    flex-direction: column; /* Stack inputs vertically */
-}
-
-input, textarea {
-    margin-bottom: 10px; /* Reduced margin */
-    padding: 10px; /* Consistent padding */
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #2e7d32; /* Green accent color */
+.carousel-nav button {
+    background-color: #2e7d32;
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #1b5e20; /* Darker green on hover */
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0; /* Reduced padding */
-    text-align: left; /* Left-aligned text */
-}
-
-.quick-links a {
-    color: white;
-    margin: 0 10px;
-}
-
-.newsletter {
-    margin: 20px 0;
-}
-
-.newsletter input {
     padding: 10px;
-    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
-.social-media a {
-    color: white;
-    margin: 0 10px;
-}
-
-.social-media a:hover {
-    text-decoration: underline;
+.carousel-nav button:hover {
+    background-color: #1b5e20;
 }
